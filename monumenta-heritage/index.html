@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Monumenta Heritage — Premium heritage restoration combining cutting-edge technology with centuries of architectural wisdom. AI-powered restoration planning for historic buildings and landmarks.">
+  <title>Monumenta Heritage — Where History Meets Tomorrow</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🏛</text></svg>">
+</head>
+
+<body>
+
+  <!-- Grain Texture Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Monumenta Heritage Home">
+        <div class="navbar__logo-icon" aria-hidden="true">M</div>
+        <span>Monumenta</span>
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#about" class="navbar__link">Our Mission</a></li>
+        <li><a href="#heritage" class="navbar__link">Heritage</a></li>
+        <li><a href="#configurator" class="navbar__link">Restoration</a></li>
+        <li><a href="#planner" class="navbar__link">AI Planner</a></li>
+        <li><a href="#cases" class="navbar__link">Case Studies</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary navbar__cta">Start Project</a>
+
+      <button class="navbar__mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__canvas-container" id="heroCanvas" aria-hidden="true"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <div class="hero__label">
+        <span class="dot"></span>
+        <span class="label">Heritage Preservation Since 1896</span>
+      </div>
+
+      <h1 class="hero__title heading-display">
+        <span>Restoring</span>
+        <span class="text-gold-gradient">History's</span>
+        <br>
+        <span>Greatest Treasures</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        We blend centuries of architectural wisdom with AI-powered restoration technology to preserve the world's most
+        irreplaceable heritage sites.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#planner" class="btn btn-primary">Plan Your Restoration</a>
+        <a href="#heritage" class="btn btn-ghost">Explore Heritage</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT / MISSION
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrapper reveal-left">
+          <div class="about__image"
+            style="background: linear-gradient(135deg, #2a1f12, #3a2e1e, #1a140c); display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="300" style="opacity: 0.3;">
+              <rect x="170" y="80" width="60" height="350" fill="#c9a96e" />
+              <polygon points="200,30 100,120 300,120" fill="#c9a96e" />
+              <rect x="80" y="120" width="240" height="20" fill="#c9a96e" />
+              <rect x="90" y="380" width="220" height="20" fill="#c9a96e" />
+              <rect x="80" y="400" width="240" height="30" fill="#c9a96e" />
+              <circle cx="130" cy="250" r="25" fill="none" stroke="#c9a96e" stroke-width="3" />
+              <circle cx="270" cy="250" r="25" fill="none" stroke="#c9a96e" stroke-width="3" />
+            </svg>
+          </div>
+          <div class="about__image-overlay"></div>
+          <div class="about__image-border"></div>
+        </div>
+
+        <div class="about__text reveal-right">
+          <span class="label">Our Mission</span>
+          <h2 class="heading-section">
+            Preserving <span class="text-gold-gradient">Legacy</span>,<br>
+            Engineering the Future
+          </h2>
+          <p>
+            For over a century, Monumenta Heritage has stood at the intersection of historical preservation and
+            technological innovation. We don't merely restore buildings — we resurrect the stories embedded within their
+            walls.
+          </p>
+          <p>
+            Our team of master craftspeople, structural engineers, and AI specialists work together to ensure that every
+            restoration honors the original architect's vision while fortifying structures for centuries to come.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat-item reveal reveal-delay-1">
+              <span class="stat-item__number">128</span>
+              <span class="stat-item__label">Years of Legacy</span>
+            </div>
+            <div class="stat-item reveal reveal-delay-2">
+              <span class="stat-item__number">2,400+</span>
+              <span class="stat-item__label">Sites Restored</span>
+            </div>
+            <div class="stat-item reveal reveal-delay-3">
+              <span class="stat-item__number">47</span>
+              <span class="stat-item__label">Countries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-line" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HERITAGE STORIES (Parallax Sticky Scroll)
+       ============================================================ -->
+  <section class="heritage" id="heritage">
+    <div class="heritage__sticky-container" id="heritageContainer">
+      <div class="heritage__sticky-panel">
+        <div class="heritage__bg-layer" id="heritageBg"></div>
+        <div class="heritage__content-layer">
+          <span class="label" style="margin-bottom: 2rem; display: block;">Heritage Stories</span>
+          <p class="heritage__story-text" id="heritageText">
+            Every stone tells a story. Every arch carries the weight of centuries. Every restoration is a conversation
+            between past and future — a promise that what was built with passion will endure with purpose. We listen to
+            buildings the way others listen to music: hearing the harmonics of history in every crack, every weathered
+            surface, every faded inscription.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BEFORE / AFTER CONFIGURATOR
+       ============================================================ -->
+  <section class="configurator" id="configurator">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--space-2xl);" class="reveal">
+        <span class="label">Interactive Restoration</span>
+        <div class="section-divider" style="margin-top: var(--space-sm);"></div>
+        <h2 class="heading-section">See the <span class="text-gold-gradient">Transformation</span></h2>
+        <p style="color: var(--color-text-secondary); max-width: 550px; margin: var(--space-md) auto 0;">
+          Drag the slider to witness the power of precision restoration — from deteriorated ruin to preserved
+          masterpiece.
+        </p>
+      </div>
+
+      <div class="configurator__wrapper reveal-scale" id="configuratorSlider">
+        <div class="configurator__before">
+          <div class="configurator__before-content">
+            <div class="configurator__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" style="opacity:0.3">
+                <rect x="60" y="60" width="80" height="120" fill="none" stroke="#8a7e6e" stroke-width="2"
+                  stroke-dasharray="5,5" />
+                <line x1="70" y1="80" x2="130" y2="80" stroke="#8a7e6e" stroke-width="1" opacity="0.5" />
+                <line x1="70" y1="100" x2="120" y2="100" stroke="#8a7e6e" stroke-width="1" opacity="0.3" />
+                <path d="M90,50 L100,30 L110,50" fill="none" stroke="#8a7e6e" stroke-width="2" stroke-dasharray="3,3" />
+                <text x="100" y="150" text-anchor="middle" fill="#8a7e6e" font-size="10"
+                  font-family="serif">Deteriorated</text>
+              </svg>
+            </div>
+          </div>
+          <span class="configurator__label-tag">Before</span>
+        </div>
+
+        <div class="configurator__after" id="afterPanel">
+          <div class="configurator__after-content">
+            <div class="configurator__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" style="opacity:0.4">
+                <rect x="60" y="60" width="80" height="120" fill="none" stroke="#1a1410" stroke-width="2" />
+                <polygon points="100,30 60,60 140,60" fill="none" stroke="#1a1410" stroke-width="2" />
+                <rect x="80" y="120" width="15" height="60" fill="none" stroke="#1a1410" stroke-width="1.5" />
+                <rect x="105" y="120" width="15" height="60" fill="none" stroke="#1a1410" stroke-width="1.5" />
+                <circle cx="100" cy="90" r="15" fill="none" stroke="#1a1410" stroke-width="1.5" />
+                <text x="100" y="195" text-anchor="middle" fill="#1a1410" font-size="10"
+                  font-family="serif">Restored</text>
+              </svg>
+            </div>
+          </div>
+          <span class="configurator__label-tag">After</span>
+        </div>
+
+        <div class="configurator__slider" id="sliderLine">
+          <div class="configurator__slider-handle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" fill="none" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-line" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       AI RESTORATION PLANNER
+       ============================================================ -->
+  <section class="planner" id="planner">
+    <div class="container">
+      <div class="planner__card glass-card reveal">
+        <div class="planner__header">
+          <div class="planner__ai-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path
+                d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1.27c.34-.6.99-1 1.73-1a2 2 0 010 4c-.74 0-1.39-.4-1.73-1H20a7 7 0 01-7 7v1.27c.6.34 1 .99 1 1.73a2 2 0 01-4 0c0-.74.4-1.39 1-1.73V23a7 7 0 01-7-7H2.73c-.34.6-.99 1-1.73 1a2 2 0 010-4c.74 0 1.39.4 1.73 1H4a7 7 0 017-7V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z" />
+            </svg>
+            AI-Powered Analysis
+          </div>
+          <span class="label">Restoration Planner</span>
+          <h2 class="heading-section" style="margin-top: var(--space-sm);">
+            Plan Your <span class="text-gold-gradient">Restoration</span>
+          </h2>
+          <p style="color: var(--color-text-secondary); margin-top: var(--space-sm);">
+            Our AI analyzes your heritage site and generates a comprehensive restoration roadmap.
+          </p>
+        </div>
+
+        <form class="planner__form" id="plannerForm" onsubmit="return false;">
+          <div class="planner__row">
+            <div class="planner__field">
+              <label for="siteName">Heritage Site Name</label>
+              <input type="text" id="siteName" class="planner__input" placeholder="e.g., St. Augustine Cathedral">
+            </div>
+            <div class="planner__field">
+              <label for="siteAge">Approximate Age</label>
+              <input type="text" id="siteAge" class="planner__input" placeholder="e.g., 450 years">
+            </div>
+          </div>
+
+          <div class="planner__row">
+            <div class="planner__field">
+              <label for="buildingType">Structure Type</label>
+              <select id="buildingType" class="planner__select">
+                <option value="">Select type...</option>
+                <option value="cathedral">Cathedral / Church</option>
+                <option value="palace">Palace / Manor</option>
+                <option value="castle">Castle / Fortress</option>
+                <option value="monument">Monument / Memorial</option>
+                <option value="bridge">Historic Bridge</option>
+                <option value="residence">Heritage Residence</option>
+                <option value="civic">Civic Building</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="planner__field">
+              <label for="urgency">Restoration Urgency</label>
+              <select id="urgency" class="planner__select">
+                <option value="">Select urgency...</option>
+                <option value="critical">Critical — Structural Risk</option>
+                <option value="high">High — Significant Decay</option>
+                <option value="moderate">Moderate — Preventive Care</option>
+                <option value="low">Low — Cosmetic Enhancement</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="planner__field">
+            <label for="description">Describe the Condition</label>
+            <textarea id="description" class="planner__textarea"
+              placeholder="Describe visible damage, historical significance, previous restoration attempts, and any specific concerns..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary planner__submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1.27c.34-.6.99-1 1.73-1a2 2 0 010 4c-.74 0-1.39-.4-1.73-1H20a7 7 0 01-7 7v1.27c.6.34 1 .99 1 1.73a2 2 0 01-4 0c0-.74.4-1.39 1-1.73V23a7 7 0 01-7-7H2.73c-.34.6-.99 1-1.73 1a2 2 0 010-4c.74 0 1.39.4 1.73 1H4a7 7 0 017-7V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z" />
+            </svg>
+            Generate AI Restoration Plan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESTORATION TIMELINE (Neumorphism Progress)
+       ============================================================ -->
+  <section class="timeline" id="timeline">
+    <div class="container container--narrow">
+      <div class="timeline__header reveal">
+        <span class="label">Our Process</span>
+        <div class="section-divider" style="margin-top: var(--space-sm);"></div>
+        <h2 class="heading-section">Restoration <span class="text-gold-gradient">Phases</span></h2>
+      </div>
+
+      <div class="timeline__items">
+        <div class="timeline__item neu-raised reveal reveal-delay-1" data-progress="100">
+          <div class="timeline__item-header">
+            <h3 class="timeline__item-title">I. Assessment & Discovery</h3>
+            <span class="timeline__item-percent">100%</span>
+          </div>
+          <p class="timeline__item-desc">
+            AI-powered structural analysis, historical research, material sampling, and comprehensive condition
+            documentation using 3D scanning technology.
+          </p>
+          <div class="neu-progress-track">
+            <div class="neu-progress-fill" data-width="100"></div>
+          </div>
+        </div>
+
+        <div class="timeline__item neu-raised reveal reveal-delay-2" data-progress="85">
+          <div class="timeline__item-header">
+            <h3 class="timeline__item-title">II. Conservation Planning</h3>
+            <span class="timeline__item-percent">85%</span>
+          </div>
+          <p class="timeline__item-desc">
+            Detailed restoration schematics, material matching, heritage compliance review, and stakeholder alignment
+            for preservation standards.
+          </p>
+          <div class="neu-progress-track">
+            <div class="neu-progress-fill" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="timeline__item neu-raised reveal reveal-delay-3" data-progress="62">
+          <div class="timeline__item-header">
+            <h3 class="timeline__item-title">III. Master Craftsmanship</h3>
+            <span class="timeline__item-percent">62%</span>
+          </div>
+          <p class="timeline__item-desc">
+            Hands-on restoration by master artisans using traditional techniques augmented with modern precision tools
+            and materials science.
+          </p>
+          <div class="neu-progress-track">
+            <div class="neu-progress-fill" data-width="62"></div>
+          </div>
+        </div>
+
+        <div class="timeline__item neu-raised reveal reveal-delay-4" data-progress="30">
+          <div class="timeline__item-header">
+            <h3 class="timeline__item-title">IV. Legacy Preservation</h3>
+            <span class="timeline__item-percent">30%</span>
+          </div>
+          <p class="timeline__item-desc">
+            Long-term monitoring systems, environmental controls, digital twin archiving, and maintenance programs for
+            generations of stewardship.
+          </p>
+          <div class="neu-progress-track">
+            <div class="neu-progress-fill" data-width="30"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-line" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       CASE STUDIES
+       ============================================================ -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <div class="cases__header reveal">
+        <span class="label">Featured Work</span>
+        <div class="section-divider" style="margin-top: var(--space-sm);"></div>
+        <h2 class="heading-section">Landmark <span class="text-gold-gradient">Restorations</span></h2>
+      </div>
+    </div>
+
+    <div class="cases__pin-wrapper" id="casesPinWrapper">
+      <div class="cases__track" id="casesTrack">
+        <div class="case-card glass-card">
+          <div class="case-card__bg" style="background: linear-gradient(135deg, #3a2e1e, #5a4a32, #2a1f12);"></div>
+          <div class="case-card__content">
+            <span class="case-card__tag">Cathedral</span>
+            <h3 class="case-card__title">Notre-Dame Spire Restoration</h3>
+            <p class="case-card__desc">Complete structural and artistic restoration of the iconic spire using medieval
+              techniques enhanced with AI-guided precision.</p>
+          </div>
+        </div>
+
+        <div class="case-card glass-card">
+          <div class="case-card__bg" style="background: linear-gradient(135deg, #2a3a2e, #1a2a1e, #3a4a32);"></div>
+          <div class="case-card__content">
+            <span class="case-card__tag">Palace</span>
+            <h3 class="case-card__title">Alhambra Courtyard Revival</h3>
+            <p class="case-card__desc">Meticulous restoration of Nasrid plasterwork and hydraulic systems preserving
+              Islamic architectural heritage.</p>
+          </div>
+        </div>
+
+        <div class="case-card glass-card">
+          <div class="case-card__bg" style="background: linear-gradient(135deg, #2e2a3a, #1e1a2a, #3a324a);"></div>
+          <div class="case-card__content">
+            <span class="case-card__tag">Castle</span>
+            <h3 class="case-card__title">Edinburgh Castle Walls</h3>
+            <p class="case-card__desc">Structural reinforcement and stone conservation of 12th-century fortifications
+              using non-invasive stabilization.</p>
+          </div>
+        </div>
+
+        <div class="case-card glass-card">
+          <div class="case-card__bg" style="background: linear-gradient(135deg, #3a2a1e, #4a3a2e, #2a1a0e);"></div>
+          <div class="case-card__content">
+            <span class="case-card__tag">Monument</span>
+            <h3 class="case-card__title">Colosseum Arch Program</h3>
+            <p class="case-card__desc">Comprehensive conservation of travertine arches with revolutionary bio-mineral
+              consolidation treatment.</p>
+          </div>
+        </div>
+
+        <div class="case-card glass-card">
+          <div class="case-card__bg" style="background: linear-gradient(135deg, #1e2a3a, #0e1a2a, #2e3a4a);"></div>
+          <div class="case-card__content">
+            <span class="case-card__tag">Bridge</span>
+            <h3 class="case-card__title">Ponte Vecchio Foundations</h3>
+            <p class="case-card__desc">Underwater foundation restoration preserving 14th-century engineering while
+              meeting modern flood resilience standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials__header reveal">
+        <span class="label">Trusted By Preservationists</span>
+        <div class="section-divider" style="margin-top: var(--space-sm);"></div>
+        <h2 class="heading-section">What They <span class="text-gold-gradient">Say</span></h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card glass-card reveal reveal-delay-1">
+          <span class="testimonial-card__quote-icon" aria-hidden="true">"</span>
+          <p class="testimonial-card__text">
+            Monumenta's approach to our cathedral restoration was extraordinary. Their AI analysis discovered structural
+            weaknesses that traditional surveys missed entirely.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ER</div>
+            <div class="testimonial-card__info">
+              <strong>Dr. Elena Rossi</strong>
+              <span>Director, Italian Heritage Foundation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card reveal reveal-delay-2">
+          <span class="testimonial-card__quote-icon" aria-hidden="true">"</span>
+          <p class="testimonial-card__text">
+            The precision of their restoration work on our 15th-century manor house was breathtaking. Every original
+            detail was honored and preserved for future generations.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JW</div>
+            <div class="testimonial-card__info">
+              <strong>Sir James Whitfield</strong>
+              <span>English Heritage Trust</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card reveal reveal-delay-3">
+          <span class="testimonial-card__quote-icon" aria-hidden="true">"</span>
+          <p class="testimonial-card__text">
+            Their combination of master craftsmanship and cutting-edge technology sets a new global standard for
+            heritage preservation. Simply unmatched.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AK</div>
+            <div class="testimonial-card__info">
+              <strong>Prof. Aiko Kimura</strong>
+              <span>UNESCO World Heritage Advisor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-line" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       CTA / CONTACT
+       ============================================================ -->
+  <section class="cta" id="contact">
+    <div class="cta__bg-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta__content reveal">
+        <span class="label">Begin Your Legacy</span>
+        <div class="section-divider" style="margin-top: var(--space-sm);"></div>
+        <h2 class="heading-section">
+          Every Great Restoration<br>
+          Starts With a <span class="text-gold-gradient">Conversation</span>
+        </h2>
+        <p>
+          Whether you're preserving a centuries-old cathedral or safeguarding a beloved community landmark, our team is
+          ready to craft a restoration vision worthy of the history it protects.
+        </p>
+        <div class="cta__actions">
+          <a href="#planner" class="btn btn-primary">Start Your Project</a>
+          <a href="mailto:heritage@monumenta.com" class="btn btn-ghost">heritage@monumenta.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Monumenta Heritage</span>
+        <ul class="footer__links">
+          <li><a href="#about">Mission</a></li>
+          <li><a href="#heritage">Heritage</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+          <li><a href="#planner">AI Planner</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">
+        &copy; 2026 Monumenta Heritage. Preserving the past, engineering the future. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS (CDN)
+       ============================================================ -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
