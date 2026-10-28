@@ -419,7 +419,7 @@
           const targetWidth = entry.target.getAttribute('data-width');
           if (targetWidth) {
             setTimeout(() => {
-              entry.target.style.width = targetWidth + '%';
+              entry.target.style.transform = 'scaleX(' + (targetWidth / 100) + ')';
             }, 300);
           }
           observer.unobserve(entry.target);

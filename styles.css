@@ -253,8 +253,10 @@ a:hover {
   border-radius: var(--radius-full);
   background: linear-gradient(90deg, var(--color-gold-600), var(--color-gold-400), var(--color-gold-300));
   box-shadow: 0 0 12px rgba(201, 169, 110, 0.4);
-  width: 0%;
-  transition: width 1.5s var(--ease-out-expo);
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.5s var(--ease-out-expo);
 }
 
 /* --- Button System --- */
@@ -477,7 +479,6 @@ a:hover {
   height: 6px;
   border-radius: 50%;
   background: var(--color-gold-400);
-  animation: pulse-dot 2s infinite;
 }
 
 .hero__title {
@@ -1317,20 +1318,6 @@ a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes pulse-dot {
-
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.5);
-    opacity: 0.6;
   }
 }
 
